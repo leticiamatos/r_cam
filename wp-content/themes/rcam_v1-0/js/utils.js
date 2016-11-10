@@ -317,6 +317,9 @@ jQuery(function($) {
 	}, function(e) {
 		$(this).removeClass('active');
 	});
+	$('.adv_sidewpr .less').click(function(e) {
+		$(this).closest('.adv_expansive').toggleClass('active');
+	});
 
 	function countSeconds(n){
 		if( n >= 0 ){

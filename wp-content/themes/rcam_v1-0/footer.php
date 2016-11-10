@@ -95,7 +95,7 @@
 
 
 
-		<?php include_once("analyticstracking.php") ?>
+		<?php //include_once("analyticstracking.php") ?>
 		<script async defer>
                 jQuery(document).ready(function(){
                 jQuery('#banner-scania a').click(function() {

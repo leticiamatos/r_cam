@@ -1,7 +1,10 @@
 
 <?php 
+	// Link externo 
 	$link_redirecionamento = 'htt://maps.google.com';
-	$imagem = 'http://localhost/grupott/revistacaminhoneiro/wp/wp-content/themes/rcam_v1-0/img/z_lixo/modal.jpg';
+
+	// Imagem do popup
+	$imagem = 'http://localhost/grupott/revistacaminhoneiro/wp/wp-content/themes/rcam_v1-0/img/z_lixo/barralateral.png';
 ?>
 <section class="adv adv_sidewpr">
 	<div class="adv_wpr">
@@ -10,6 +13,7 @@
 				<img src="<?php echo $imagem; ?>" />
 				<a href="<?php echo $link_redirecionamento; ?>" class="adv_link" target="_blank"></a>
 			</figure>
+			<a class="less"></a>
 		</div>
 	</div>
 </section>

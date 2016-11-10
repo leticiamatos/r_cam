@@ -64,8 +64,8 @@ class Advanced_Ads_Overview_Widgets_Callbacks {
 		array('Advanced_Ads_Overview_Widgets_Callbacks', 'render_add_on_layer'), $screen->id, 'side', 'high');
 		add_meta_box('advads_overview_addon_slider', __( 'Ad Slider', 'advanced-ads' ),
 		array('Advanced_Ads_Overview_Widgets_Callbacks', 'render_add_on_slider'), $screen->id, 'side', 'high');
-		// add_meta_box('advads_overview_addon_sellingads', __( 'Selling Ads', 'advanced-ads' ),
-		// array('Advanced_Ads_Overview_Widgets_Callbacks', 'render_add_on_sellingads'), $screen->id, 'side', 'high');
+		add_meta_box('advads_overview_addon_sellingads', __( 'Selling Ads', 'advanced-ads' ),
+		array('Advanced_Ads_Overview_Widgets_Callbacks', 'render_add_on_sellingads'), $screen->id, 'side', 'high');
 		
 		do_action( 'advanced-ads-overview-widgets-after', $screen );
 	}
@@ -255,8 +255,8 @@ foreach ( $next_steps as $_step ){
 	 * selling ads add-on widget
 	 */
 	public static function render_add_on_sellingads(){
-		?><p><?php _e( 'Let users purchase ads directly in the frontend of your site.', 'advanced-ads' ); ?></p>
-		<p><a class="button button-primary" href="<?php echo ADVADS_URL; ?>add-ons/slider/#utm_source=advanced-ads&utm_medium=link&utm_campaign=overview-add-ons" target="_blank"><?php
+		?><p><?php _e( 'Let advertisers purchase ad space directly on the frontend of your site.', 'advanced-ads' ); ?></p>
+		<p><a class="button button-primary" href="<?php echo ADVADS_URL; ?>add-ons/selling-ads/#utm_source=advanced-ads&utm_medium=link&utm_campaign=overview-add-ons" target="_blank"><?php
 			_e( 'Get the Selling Ads add-on', 'advanced-ads' ); ?></a></p><?php
 	}
 

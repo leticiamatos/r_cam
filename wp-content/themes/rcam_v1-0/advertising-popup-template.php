@@ -1,8 +1,16 @@
 <?php
-	$contagem_regressiva = false;
-	$imagem_popup = 'http://localhost/grupott/revistacaminhoneiro/wp/wp-content/themes/rcam_v1-0/img/z_lixo/modal.jpg';
-	$youtube_id = '64wIZ409YDk';
+	
+	// Link externo 
 	$link_redirecionamento - 'http://maps.google.com';
+	
+	// Imagem do popup
+	$imagem_popup = 'http://localhost/grupott/revistacaminhoneiro/wp/wp-content/themes/rcam_v1-0/img/z_lixo/modal.jpg';
+	
+	// Id do vídeo do Youtube (entre aspas, eg.: '64wIZ409YDk') ou apenas false, se náo houver video
+	$youtube_id = '64wIZ409YDk';
+
+	// Se houver contagem regressiva, alterar para true. Se náo houver, manter false (obs: sem aspas)
+	$contagem_regressiva = false;
 ?>
 <section class="modal_bg">
 	<div class="modal_box_relative">

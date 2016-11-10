@@ -4,7 +4,7 @@ Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id
 Tags: ads, ad, ad inserter, ad injection, ad manager, ads manager, ad widget, adrotate, adsense, advertise, advertisements, advertising, adverts, advert, amazon, banner, banners, buysellads, chitika, clickbank, dfp, doubleclick, geotarget, geolocation, geo location, google dfp, monetization, widget
 Requires at least: WP 4.2, PHP 5.3
 Tested up to: 4.6.1
-Stable tag: 1.7.9.2
+Stable tag: 1.7.9.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -205,6 +205,13 @@ There is no revenue share. Advanced Ads doesn’t alter your ad codes in a way t
 4. Placements that let you inject ads anywhere into your site without coding (6 in Advanced Ads + 9 through add-ons)
 
 == Changelog ==
+
+= 1.7.9.3 =
+
+* added Selling Ads widget on overview page
+* removed add-on update transient hopefully fixing update checks
+* updated EDD class
+* workaround for empty post-id error caused by BuddyPress
 
 = 1.7.9.2 =
 

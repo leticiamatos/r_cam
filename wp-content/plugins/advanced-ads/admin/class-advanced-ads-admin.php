@@ -574,8 +574,8 @@ class Advanced_Ads_Admin {
          */
         public function add_on_updater(){
 	    
-		// ignore, if not main blog
-		if( is_multisite() && ! is_main_site() ){
+		// ignore, if not main blog or is ajax
+		if( ( is_multisite() && ! is_main_site() ) || defined( 'DOING_AJAX' ) ){
 		    return;
 		}
 
@@ -593,13 +593,6 @@ class Advanced_Ads_Admin {
 		if( $add_ons === array() ) {
 		    return;
 		}
-		
-		// check only every hour for updates to decrease load on store
-		// ignore, if force-update was set
-		if( ! isset( $_GET['force-check'] ) && get_transient( ADVADS_SLUG . '_add-on-updates-checked' ) ){
-		    return;
-		}
-		set_transient( ADVADS_SLUG . '_add-on-updates-checked', true, 3600 );
 		
 		// load license keys
 		$licenses = get_option(ADVADS_SLUG . '-licenses', array());

@@ -1,7 +1,14 @@
 <?php 
+	// Link externo 
 	$link_redirecionamento = 'htt://maps.google.com';
+
+	// Imagem do banner recolhido
 	$imagem_banner = 'http://localhost/grupott/revistacaminhoneiro/wp/wp-content/themes/rcam_v1-0/img/z_lixo/modal.jpg';
+
+	// Imagem do banner expandido
 	$imagem_expandido = 'http://localhost/grupott/revistacaminhoneiro/wp/wp-content/themes/rcam_v1-0/img/z_lixo/modal.jpg';
+
+	// Id do vídeo do Youtube (entre aspas, eg.: '64wIZ409YDk') ou apenas false, se náo houver video  (obs: sem aspas)
 	$video_youtube_id = false;
 ?>
 	

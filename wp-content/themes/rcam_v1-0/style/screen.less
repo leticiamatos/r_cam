@@ -48,117 +48,122 @@
 /* =============================================================================
    General
 ========================================================================== */
+.translateY (@translateY: -50%){
+  transform: translateY(@translateY);
+  -ms-transform: translateY(@translateY);
+  -webkit-transform: translateY(@translateY);
+}
 .radius3 (@radius: 3px){
-  border-radius:@radius !important;
   -moz-border-radius:@radius !important;
   -webkit-border-radius:@radius !important;
   -o-border-radius:@radius !important;
   -ms-border-radius:@radius !important;
+  border-radius:@radius !important;
 }
 .radius4 (@radius: 4px){
-  border-radius:@radius !important;
   -moz-border-radius:@radius !important;
   -webkit-border-radius:@radius !important;
   -o-border-radius:@radius !important;
   -ms-border-radius:@radius !important;
+  border-radius:@radius !important;
 }
 .radius6 (@radius: 5px){
-  border-radius:@radius !important;
   -moz-border-radius:@radius !important;
   -webkit-border-radius:@radius !important;
   -o-border-radius:@radius !important;
   -ms-border-radius:@radius !important;
+  border-radius:@radius !important;
 }
 .radius5top (@radius: 5px 5px 0 0){
-  border-radius:@radius !important;
   -moz-border-radius:@radius !important;
   -webkit-border-radius:@radius !important;
   -o-border-radius:@radius !important;
   -ms-border-radius:@radius !important;
+  border-radius:@radius !important;
 }
 .radius5bottom (@radius: 0 0 5px 5px){
-  border-radius:@radius !important;
   -moz-border-radius:@radius !important;
   -webkit-border-radius:@radius !important;
   -o-border-radius:@radius !important;
   -ms-border-radius:@radius !important;
+  border-radius:@radius !important;
 }
 .noRadius (@radius: none){
-  border-radius:@radius !important;
   -moz-border-radius:@radius !important;
   -webkit-border-radius:@radius !important;
   -o-border-radius:@radius !important;
   -ms-border-radius:@radius !important;
+  border-radius:@radius !important;
 }
 .transition (@transition:0.6s){
-  transition:@transition;
   -moz-transition:@transition;
   -webkit-transition:@transition;
   -o-transition:@transition;
   -ms-transition:@transition;
+  transition:@transition;
 }
 .transition_2 (@transition:0.2s){
-  transition:@transition;
   -moz-transition:@transition;
   -webkit-transition:@transition;
   -o-transition:@transition;
   -ms-transition:@transition;
+  transition:@transition;
 }
 .noTransition (@transition:none){
-  transition:@transition;
   -moz-transition:@transition;
   -webkit-transition:@transition;
   -o-transition:@transition;
   -ms-transition:@transition;
+  transition:@transition;
 }
 .noOpacity{
   opacity: 1 !important;
 }
 .shadow (@shadow: 3px 3px 2px rgba(0,0,0,0.3)){
-  box-shadow:@shadow !important;
   -moz-box-shadow:@shadow !important;
   -webkit-box-shadow:@shadow !important;
   -o-box-shadow:@shadow !important;
   -ms-box-shadow:@shadow !important;
+  box-shadow:@shadow !important;
 }
 .shadow-menu (@shadow: 1px 1px 2px rgba(0,0,0,0.4)){
-  box-shadow:@shadow !important;
   -moz-box-shadow:@shadow !important;
   -webkit-box-shadow:@shadow !important;
   -o-box-shadow:@shadow !important;
   -ms-box-shadow:@shadow !important;
+  box-shadow:@shadow !important;
 }
 .txt-error_shadow (@shadow: 0 0 10px rgba(130, 30, 4, 0.70)){
-  box-shadow:@shadow !important;
   -moz-box-shadow:@shadow !important;
   -webkit-box-shadow:@shadow !important;
   -o-box-shadow:@shadow !important;
   -ms-box-shadow:@shadow !important;
+  box-shadow:@shadow !important;
 }
 .shadow_default_box (@shadow: 1px 1px 1px rgba(0,0,0, 0.10)){
-  box-shadow:@shadow !important;
   -moz-box-shadow:@shadow !important;
   -webkit-box-shadow:@shadow !important;
   -o-box-shadow:@shadow !important;
   -ms-box-shadow:@shadow !important;
+  box-shadow:@shadow !important;
 }
 .txt-shadow (
   @shadow: 2px 3px 2px #000, 
   @shadow2: -1px -1px 0 rgba(0,0,0,0.2),
   @shadow3: 2px 2px 1px rgba(0,0,0,0.7)
   ){
-  text-shadow: @shadow, @shadow2, @shadow3 !important;
   -moz-text-shadow: @shadow, @shadow2, @shadow3 !important;
   -webkit-text-shadow: @shadow, @shadow2, @shadow3 !important;
   -o-text-shadow: @shadow, @shadow2, @shadow3 !important;
   -ms-text-shadow: @shadow, @shadow2, @shadow3 !important;
+  text-shadow: @shadow, @shadow2, @shadow3 !important;
 }
 .txt-menugrupo-shadow ( @shadow3: 1px 1px 2px rgba(0, 0, 0, 0.7) ){
-  text-shadow:  @shadow3 !important;
   -moz-text-shadow:  @shadow3 !important;
   -webkit-text-shadow:  @shadow3 !important;
   -o-text-shadow:  @shadow3 !important;
   -ms-text-shadow:  @shadow3 !important;
+  text-shadow:  @shadow3 !important;
 }
 
 // Columns 
@@ -180,9 +185,9 @@
 
 // Border Inside box
 .innerBorder{
-  box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .default_box{
   border: 1px solid @cBorder;
@@ -193,7 +198,7 @@
 .verticalAlign{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  .translateY;
 }
 .clear{
   display: block; 
@@ -211,6 +216,7 @@ a:hover{
   width: 100%;
   clear: both;
   position: relative;
+  z-index: 0;
 }
 .block_cntt{
   position: relative;
@@ -443,7 +449,7 @@ img.ajax-loader {
     float: left;
   }
   .menu_wpr{
-    // position: relative;
+    position: relative;
   }
   .col1-3{
     padding-top: 35px;
@@ -738,10 +744,7 @@ h1.logo{
     }
   }
   .less{
-    margin: 10px;
     position: absolute;
-    width: 105px;
-    height: 30px;
   }
   .adv_link{
     position: absolute;
@@ -773,15 +776,24 @@ h1.logo{
     top: 0;
   }
   .less{
-    right: 0;
-    bottom: 0;
+    background: url(../img/adv_close.png) center no-repeat;
+    background-size: 85% auto;
+    width: 10%;
+    height: 9%;
+    right: 1%;
+    bottom: 3%;
   }
   iframe{
     position: absolute;
-    top: 30px;
-    right: 30px;
-    height: 205px;
-    width: 350px;
+    right: 5%;
+    top: 10%;
+    width: 38%;
+    height: 69%;
+
+    // top: 30px;
+    // right: 30px;
+    // height: 205px;
+    // width: 350px;
     z-index: 7;
   }
   .adv_expansive.active{
@@ -820,9 +832,21 @@ h1.logo{
       display: block;
     }
   }
+  iframe{
+    position: absolute;
+    top: 13%;
+    right: 6%;
+    width: 39%;
+    height: 76%;
+    z-index: 7;
+  }
   .less{
-    right: 0;
-    top: 0;
+    background: url(../img/adv_close.png) center no-repeat;
+    background-size: 85% auto;
+    width: 10%;
+    height: 9%;
+    right: 1%;
+    top: 2%;
   }
   .adv_expansive.active{
     .adv_expanded{
@@ -837,6 +861,16 @@ h1.logo{
   right: 0;
   height: 511px;
   z-index: 10;
+
+  .less{
+    width: 50px;
+    height: 280px;      
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 7;
+  }
 
   .adv_wpr{
     .adv_expansive{ 
@@ -854,6 +888,11 @@ h1.logo{
     img{
       display: block;
     }
+  }
+  .adv_link{
+    width: 80%;
+    right: 0;
+    left: auto;
   }
   .adv_expansive.active{
     width: 253px;
@@ -895,11 +934,12 @@ h1.logo{
       z-index: 82;
       top: 14%;
       width: 100%;
+      height: 100%;
     }
     iframe{
       margin: 0 auto;
-      width: 730px;
-      height: 430px;
+      width: 72.4%;
+      height: 65.1%;
     }
     .modal_box{
       position: relative;
@@ -924,12 +964,18 @@ h1.logo{
     }
     .close_btn{
       position: absolute;
-      top: -2px;
-      right: 17px;
-      width: 115px;
-      height: 42px;
-      margin: 10px;
+      // top: -2px;
+      // right: 17px;
+      // width: 115px;
+      // height: 42px;
+      // margin: 10px;
+      top: 1.3%;
+      right: 2%;
+      width: 12.1%;
+      height: 6.2%;
       cursor: pointer;
+      background: url(../img/adv_close.png) center no-repeat;
+      background-size: 85% auto;
     }
     .adv_link,
     .modal_banner,
@@ -1639,7 +1685,7 @@ article{
       height: 100%;
       cursor: pointer;
       z-index: 20;
-      &.video_link{ z-index: 30;}
+      // &.video_link{ z-index: 30;}
     }
     &.current,
     &:hover{
@@ -1686,7 +1732,7 @@ article{
     color: @cYellow;
   }
   .allposts a{
-    // position: absolute;
+    position: absolute;
     // bottom: 0;
     // left: 0;
     padding: 10px 10px 20px;
@@ -1802,7 +1848,7 @@ article{
       padding: 0 20px;
       background: @cBorder;
       position: relative;
-      z-index: 3;
+      // z-index: 3;
     }
   }
   .block_border{
@@ -1810,7 +1856,7 @@ article{
     position: relative;
     top: 33px;
     height: 4px;
-    z-index: 2;
+    // z-index: 2;
   }
   .bx-viewport{
     margin-top: 10px;
@@ -1938,7 +1984,7 @@ article{
     background: #fff;
     padding: 0 20px;
     margin: 0 auto;
-    z-index: 4;
+    // z-index: 4;
     position: relative;
     .block_title;
     display: inline-block;
@@ -1946,7 +1992,7 @@ article{
     text-indent: 0;
   }
   .block_border{
-    z-index: 3;
+    // z-index: 3;
     background: @cRed;
     position: relative;
     top: 34px;
@@ -2583,7 +2629,7 @@ aside{
   padding-bottom: 30px;
 }
 
-// Post List
+Post List
 .post_list{
   article{
     clear: both;

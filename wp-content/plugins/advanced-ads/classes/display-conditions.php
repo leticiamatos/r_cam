@@ -660,6 +660,15 @@ class Advanced_Ads_Display_Conditions {
 		$query = $ad_options['wp_the_query'];
 		$post_id = isset($ad_options['post']['id']) ? $ad_options['post']['id'] : null;
 		
+                //fixes page id on BuddyPress pages
+                if ( $post_id == 0 && class_exists( 'BuddyPress' ) && function_exists( 'bp_current_component' )){
+                    $component = bp_current_component();
+                    $bp_pages = get_option( 'bp-pages' );
+                    if ( isset( $bp_pages[$component] ) ){
+                        $post_id = $bp_pages[$component];
+                    } 
+                }
+                
 		if( empty( $ad_options['wp_the_query']['is_singular'] ) ){
 		    if( 'is_not' === $operator ){
 			return true;

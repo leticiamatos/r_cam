@@ -132,7 +132,9 @@
 					$cat_link = get_category_link( $cat_id );
 				?>
 
-				<h3 class="block_title"><a href="<?php echo $cat_link; ?>">Vídeos</a></h3>
+				<h3 class="block_title">
+					<a href="<?php echo $cat_link; ?>">Vídeos</a>
+				</h3>
 				<div class="col2-3">
 					<div class="video_msg_wpr">
 						<p class="video_msg">
