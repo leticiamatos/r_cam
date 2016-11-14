@@ -9,3 +9,11 @@
 body{
 	position: relative;
 }
+
+/* Customizações temporárias para a capanha da Ford */
+body .modal_box a:hover{
+    opacity: 1!important;
+}
+body .modal_box a{
+    display: block;
+}
