@@ -93,27 +93,79 @@
 		})(window,document,'script','dataLayer','GTM-WNFM3C');</script>
 		<!-- End Google Tag Manager -->
 
-
-
-		<?php //include_once("analyticstracking.php") ?>
-		<script async defer>
-                jQuery(document).ready(function(){
-                jQuery('#banner-scania a').click(function() {
-                    
-                    ga('send', 'event', 'Banner','click', 'banner-Scania');
-                });
-                jQuery('#banner-texaco a').click(function() {
-                    ga('send', 'event', 'Banner','click', 'banner-Texaco');
-                });
-                jQuery('#banner-iveco a').click(function() {
-                    ga('send', 'event', 'Banner','click', 'banner-IVECO');
-                });
-                jQuery('#banner-alliance a').click(function() {
-                    ga('send', 'event', 'Banner','click', 'banner-Alliance');
-                });
-                    console.log('teste');
-                });
-        </script>	
+       <!-- Scripts de rastreamento de eventos no site -->
+       
+       <script async defer>
+           
+    jQuery(document).ready(function () {
+        jQuery('#banner-texaco a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Texaco');
+        });
+        jQuery('#banner-iveco a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-IVECO');
+        });
+        jQuery('#banner-alliance a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Alliance');
+        });
+        
+        
+        /* 
+        * Capanha da Ford
+        */
+        
+        jQuery('#banner-ford-62521 a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Ford-conforto');
+        });
+        jQuery('#banner-ford-62520 a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Ford-potencia');
+        });
+        jQuery('#banner-ford-62519 a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Ford-economia');
+        });
+        
+        
+        /* 
+        * Capanha da Scania
+        */
+        
+        jQuery('#banner-scania-servicos a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Scania-servicos');
+        });
+        jQuery('#banner-scania-semipesados a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Scania-semipesados');
+        });
+        
+        /* 
+        * Scania Abaixo da seção Galeria
+        */
+        jQuery('#banner-scania-servicos-galeria a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Scania-servicos-Galeria');
+        });
+        jQuery('#banner-scania-semipesados-galeria a').click(function () {
+            ga('send', 'event', 'Banner', 'click', 'banner-Scania-semipesados-Galeria');
+        });
+        
+        /*
+        * Mercedes
+        */
+        jQuery('#banner-mercedes-1620-728x90 a').click(function(){
+            ga('send', 'event', 'Banner', 'click', 'banner-Mercedes-1620-728x90');
+            
+        });
+        jQuery('#banner-mercedes-710-610x71 a').click(function(){
+            ga('send', 'event', 'Banner', 'click', 'banner-Mercedes-710-610x71');
+            
+        });
+        jQuery('#banner-mercedes-710-728x90 a').click(function(){
+            ga('send', 'event', 'Banner', 'click', 'banner-Mercedes-710-728x90');
+            
+        });
+        
+        });
+        </script>
+        
+    <!-- Fim scripts de rastreamento de eventos no site -->
+		
         
 	</body>
 	
