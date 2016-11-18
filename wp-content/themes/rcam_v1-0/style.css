@@ -11,9 +11,30 @@ body{
 }
 
 /* Customizações temporárias para a capanha da Ford */
+
 body .modal_box a:hover{
     opacity: 1!important;
 }
 body .modal_box a{
     display: block;
+}
+
+/* icones header */
+
+#menu-social a[title="linkedin"] {
+    background-image: url('http://revistacaminhoneiro.grupott.com.br/wp/wp-content/uploads/2016/11/linkedin-logo_alterado.png');
+}
+#menu-social a[title="youtube"] {
+    background-image: url('http://revistacaminhoneiro.grupott.com.br/wp/wp-content/uploads/2016/11/youtube-logo.png');
+}
+.header_secondary_social #menu-social {
+    max-height: 50px;
+    margin-left: -20px;
+}
+
+
+/* Título home */
+
+h1.logo svg {
+	margin-left: -100px;
 }
