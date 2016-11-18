@@ -6,35 +6,57 @@
  * Author URI: http://azulpavao.com
  */
 
-body{
-	position: relative;
+body {
+    position: relative;
 }
+
 
 /* Customizações temporárias para a capanha da Ford */
 
-body .modal_box a:hover{
+body .modal_box a:hover {
     opacity: 1!important;
 }
-body .modal_box a{
+
+body .modal_box a {
     display: block;
 }
 
-/* icones header */
+
+/**************** ícones Header *************************/
 
 #menu-social a[title="linkedin"] {
     background-image: url('http://revistacaminhoneiro.grupott.com.br/wp/wp-content/uploads/2016/11/linkedin-logo_alterado.png');
 }
+
 #menu-social a[title="youtube"] {
     background-image: url('http://revistacaminhoneiro.grupott.com.br/wp/wp-content/uploads/2016/11/youtube-logo.png');
 }
+
 .header_secondary_social #menu-social {
     max-height: 50px;
     margin-left: -20px;
 }
 
 
-/* Título home */
+/**************** Título Home *************************/
 
 h1.logo svg {
-	margin-left: -100px;
+    margin-left: -100px;
+}
+
+
+/**************** ícones Footer *************************/
+
+#menu-social-1 a[title="linkedin"] {
+    background-image: url('http://revistacaminhoneiro.grupott.com.br/wp/wp-content/uploads/2016/11/linkedin-logo_alterado.png');
+}
+
+#menu-social-1 a[title="youtube"] {
+    background-image: url('http://revistacaminhoneiro.grupott.com.br/wp/wp-content/uploads/2016/11/youtube-logo.png');
+}
+
+#menu-social li,
+#menu-social-1 li {
+    max-width: 30px;
+    margin-top: 10px;
 }
