@@ -4,7 +4,10 @@
 		<article id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
 			<figure>
 				<a href="<?php the_permalink();?>">
-				<?php if ( has_post_thumbnail()) : ?>
+				<?php $image = get_field('destaque_slider'); ?>
+				<?php if (!empty($image) ) :?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+				<?php elseif ( has_post_thumbnail()) : ?>
 					<?php the_post_thumbnail();  ?>
 				<?php else: ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/no-thumb.png"/>
@@ -21,6 +24,8 @@
 			</div>
 			<span class="clear"></span>
 		</article>
+		<!-- espaço entre as imagens de destaque do post  e o resumo do post anterior -->
+		<div class="space" style="margin-bottom: 20px;"></div> <!-- Solução temporária -->
 
 	<?php endwhile; ?>
 <?php else: ?>
