@@ -20,11 +20,25 @@
 		<article id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
 			<figure>
 				<a href="<?php the_permalink();?>">
-				<?php if ( has_post_thumbnail()) : ?>
-					<?php the_post_thumbnail();  ?>
-				<?php else: ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/img/no-thumb.png"/>
-				<?php endif; ?>
+				<!-- Imagem de destaque -->
+				<?php
+                $image = get_field('destaque_slider');
+                if( !empty($image) ){
+                    ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    <?
+                }else{
+                    if( has_post_thumbnail() ){
+                        the_post_thumbnail();
+                    }else{
+                        ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/no-thumb.png"/>
+                        <?
+                    }
+                        
+                }?>
+				
+				<!-- Fim imagem de destaque -->
 				</a>
 			</figure>
 			<div class="text">
