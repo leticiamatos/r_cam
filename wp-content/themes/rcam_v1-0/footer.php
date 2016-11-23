@@ -92,8 +92,8 @@
 		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-WNFM3C');</script>
 		<!-- End Google Tag Manager -->
-
-       <!-- Scripts de rastreamento de eventos no site -->
+       
+         <!-- Scripts de rastreamento de eventos no site -->
        
        <script async defer>
            
@@ -124,16 +124,19 @@
         });
         
         
-        /* 
-        * Capanha da Scania
-        */
+        /* Capanha da Scania */
         
+        /*
         jQuery('#banner-scania-servicos a').click(function () {
             ga('send', 'event', 'Banner', 'click', 'banner-Scania-servicos');
         });
-        jQuery('#banner-scania-semipesados a').click(function () {
+        jQuery('#banner-scania-semipesados > div > img').click(function () {
             ga('send', 'event', 'Banner', 'click', 'banner-Scania-semipesados');
         });
+        jQuery('#banner-scania-semipesados > div > img').load(function () {
+            ga('send', 'event', 'Banner', 'Impression', 'banner-Scania-semipesados');
+        });
+        */
         
         /* 
         * Scania Abaixo da seção Galeria
